@@ -10,9 +10,11 @@
   <name>GITPractice</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+ <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cucumber.version>1.2.0</cucumber.version>
+		<webdriver.version>2.53.1</webdriver.version>
+	</properties>
 
   <dependencies>
     <dependency>
@@ -21,5 +23,21 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${webdriver.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>3.13.0</version>
+		</dependency>
+    
   </dependencies>
 </project>
